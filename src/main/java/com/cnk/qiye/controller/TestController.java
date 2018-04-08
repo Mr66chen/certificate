@@ -13,14 +13,14 @@ import com.cnk.qiye.service.certificate.CertificateService;
  *
  */
 @RestController
-@RequestMapping("/test")
+
 public class TestController {
 	
 	@Autowired
 	private CertificateService certificateService;
 
-	@RequestMapping("/queryHotById")
-	public CommonResult queryHotById(){
+	@RequestMapping("/test")
+	public CommonResult selectByPrimaryKey(){
 		Long id = 1L;
 		CommonResult result = certificateService.selectByPrimaryKey(id);
 		return result;
