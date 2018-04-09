@@ -27,6 +27,11 @@
    <mvc:resources location="/image/" mapping="/image/**" />
    <mvc:resources location="/js/" mapping="/js/**" />
    <mvc:resources location="/frontPage/" mapping="/frontPage/**" />
+<!--    <mvc:resources location="/assets/" mapping="/assets/**" />
+   <mvc:resources location="/background/" mapping="/background/**" />
+   <mvc:resources location="/css1/" mapping="/css1/**" />
+   <mvc:resources location="/img/" mapping="/img/**" />
+   <mvc:resources location="/js1/" mapping="/js1/**" /> -->
 
 	<!-- 自定义统一异常处理 -->
 <!-- 	<bean class="com.happybuy.manager.exception.CustomAdminUserException"></bean> -->

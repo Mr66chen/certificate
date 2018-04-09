@@ -25,4 +25,6 @@ public class TestController {
 		CommonResult result = certificateService.selectByPrimaryKey(id);
 		return result;
 	}
+	
+	
 }

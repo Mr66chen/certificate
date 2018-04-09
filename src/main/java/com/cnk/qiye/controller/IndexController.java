@@ -12,9 +12,19 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @Controller
 public class IndexController {
 
+	/**
+	 * 跳转前台首页
+	 * @return
+	 */
 	@RequestMapping("/")
 	public String goIndex(){
 		System.out.println("go Index");
 		return "index";
+	}
+	
+	@RequestMapping("/tab")
+	public String goTab(){
+		System.out.println("go Tab");
+		return "tab";
 	}
 }
