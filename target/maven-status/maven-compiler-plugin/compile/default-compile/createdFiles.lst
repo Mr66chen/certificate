@@ -1,6 +1,7 @@
 com\cnk\qiye\service\certificate\CertificateService.class
 com\cnk\qiye\service\colloge\impl\CollogeServiceImpl.class
 com\cnk\qiye\service\colloge\CollogeService.class
+com\cnk\qiye\controller\IndexController.class
 com\cnk\qiye\constant\StatusConstant.class
 com\cnk\qiye\mapper\CMemberMapper.class
 com\cnk\qiye\mapper\CPhotoMapper.class
@@ -10,7 +11,6 @@ com\cnk\qiye\mapper\CMajorMapper.class
 com\cnk\qiye\controller\TestController.class
 com\cnk\qiye\mapper\CHotMapper.class
 com\cnk\qiye\pojo\CCertificate.class
-com\cnk\qiye\controller\colloge\ConllogeController.class
 com\cnk\qiye\pojo\CAdmin.class
 com\cnk\qiye\pojo\CIntroduce.class
 com\cnk\qiye\pojo\CHot.class
@@ -19,6 +19,7 @@ com\cnk\qiye\mapper\CAdminMapper.class
 com\cnk\qiye\pojo\CMajor.class
 com\cnk\qiye\mapper\CCertificateMapper.class
 com\cnk\qiye\mapper\CIntroduceMapper.class
+com\cnk\qiye\controller\colloge\CollogeController.class
 com\cnk\qiye\util\StringUtil.class
 com\cnk\qiye\pojo\CColloge.class
 com\cnk\qiye\common\CommonResult.class
