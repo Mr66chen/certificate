@@ -5,7 +5,7 @@
 		<property name="LOG_LEVEL">DEBUG</property><!-- 日志输出级别 -->
 		<property name="FILE_SIZE">500MB</property><!--日志切割的最小单位 -->
 
-		<property name="LOG_HOME">E:\logs\cnk\certificate</property>
+		<property name="LOG_HOME">F:\logs\cnk\certificate</property>
 		<property name="FILE_OUT_NAME">output</property>
 		<property name="FILE_Error_NAME">error</property>
 
