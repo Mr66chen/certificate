@@ -1,6 +1,10 @@
 package com.cnk.qiye.service.certificate.impl;
 
 import org.apache.logging.log4j.LogManager;
+/**
+ *证书service实现 
+ * @author Fury
+ */
 import org.apache.logging.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -57,12 +61,12 @@ public class CertificateServiceImpl implements CertificateService {
 	public CommonResult updateByPrimaryKey(CCertificate cCertificate) {
 		try {
 			cCertificateMapper.updateByPrimaryKey(cCertificate);
-			return new CommonResult(StatusConstant.SUCCESS.getCode(),"更新证书成功",null);
+			return new CommonResult(StatusConstant.SUCCESS.getCode(),"根据id更新证书成功",null);
 		} catch (Exception e) {
-			log.error("CertificateServiceImpl:更新证书失败");
+			log.error("CertificateServiceImpl:根据id更新证书失败");
 			e.printStackTrace();
 		}
-		return new CommonResult(StatusConstant.FAILD.getCode(),"更新证书失败",null);
+		return new CommonResult(StatusConstant.FAILD.getCode(),"根据id更新证书失败",null);
 
 	}
 

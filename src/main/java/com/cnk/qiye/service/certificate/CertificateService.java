@@ -2,6 +2,10 @@ package com.cnk.qiye.service.certificate;
 
 import com.cnk.qiye.common.CommonResult;
 import com.cnk.qiye.pojo.CCertificate;
+/**
+ * 证书service
+ * @author Fury
+ */
 
 public interface CertificateService {
 
