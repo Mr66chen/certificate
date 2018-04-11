@@ -1,15 +1,14 @@
-package com.cnk.qiye.mapper;
+package com.cnk.qiye.service.photocategory;
 
 import com.cnk.qiye.common.CommonResult;
 import com.cnk.qiye.pojo.CPhoto;
 import com.cnk.qiye.pojo.CPhotoCategory;
 
 /**
- * 图片类目
- * @author 黄山
- *
- */
-public interface CPhotoCategoryMapper {
+* @author Nazzey 
+* @date 2018年4月9日  
+*/
+public interface PhotoCategoryService {
 	/**
 	 * 插入图片类目数据
 	 */
@@ -18,16 +17,15 @@ public interface CPhotoCategoryMapper {
 	/**
 	 * 删除图片类目数据
 	 */
-	public void deleteByPrimaryKey(Long id);
+	public void deleteByPrimaryKey(long id);
 	
 	/**
 	 * 修改图片类目数据
 	 */
-	public void updateByPrimaryKey(CPhotoCategory cphotocategory);
+	public void updateByPrimaryKey(CPhotoCategory cphotocategory,long id);
 	
 	/**
 	 * 查找图片类目数据
 	 */
-	public CPhotoCategory selectByPrimaryKey(Long id);
-	
+	public CommonResult selectByPrimaryKey(long id);
 }
