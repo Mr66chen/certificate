@@ -1,6 +1,7 @@
 package com.cnk.qiye.controller;
 
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 
@@ -20,6 +21,18 @@ public class IndexController {
 	public String goIndex(){
 		System.out.println("go Index");
 		return "index";
+	}
+	
+	@RequestMapping("/houtai")
+	public String gohoutai(){
+		System.out.println("go Index");
+		return "indexq";
+	}
+	
+	@RequestMapping("/{page}")
+	public String goPage(@PathVariable String page){
+		System.out.println(page);
+		return page;
 	}
 	
 	@RequestMapping("/tab")

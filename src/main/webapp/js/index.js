@@ -90,14 +90,14 @@ $(function () {
         success:function (data) {
             console.log(data)//传过来的轮播图，一般限制为三个
             $("#listbox").append(
-                    "<div class=\"item active\"  onclick='enterCerticateDatil("+data.data[0].certificateId +")'>"+
-                    "                        <img src="+data.data[0].photoAddr+" alt="+data.data[0].photoDesc+">"+
+                    "<div class=\"item active\"  onclick='enterCerticateDatil("+data.certificateId +")'>"+
+                    "                        <img src="+data.photoAddr+" alt="+data.photoDesc+">"+
                     "                        <div class=\"carousel-caption\">"+
-                                           data.data[0].photoTitle+
+                                           data.photoTitle+
                     "                        </div>"+
                     "                    </div>"
             )
-              data=data.shift();
+          /*    data=data.shift();*/
 
 
                 $.each(data.data, function (i, item) {
@@ -121,7 +121,7 @@ $(function () {
     /*一些实例推荐的证书图片*/  //未完成的工作有下面三个图片还没有家在进去,包括的表有c_introduce  c_photo  c_certificate
     var datas={};
     datas.photoCategoryId = "2";
-   $.ajax({
+/*   $.ajax({
         type:"POST",
         url:"/certificate/certificatePush/certificatePhoto",//一些实例推荐的图片，然后描述，图片类别实例推荐图，一退4次
         data:JSON.stringify(datas),
@@ -151,12 +151,8 @@ $(function () {
                     )
 
                 });
-
-
-            
-
         }
-    })
+    })*/
 
 })
  
